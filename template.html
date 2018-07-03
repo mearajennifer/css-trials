@@ -3,73 +3,44 @@
 
   <head>
     <style>
-        h1 {
-            font-family: sans-serif;
-        }
-        .outer {
-            background-color: #555555;
-            width: 600px;
-            height: 130px;
-            margin-top: 10px;
-            display: block;
-        }
-
-        .inner {
+        .background {
             background-color: #cccccc;
+            height: 200px;
+            width: 900px;
+            padding: 15px 10px;
+            text-align: center;
+        }
+        .item {
+            width: 180px;
+            height: 180px;
             display: inline-block;
-            margin-top: 6px;
-            margin-left: 6px;
-            margin-right: 0;
+            margin: auto;
         }
+        .square {
+            border: 10px double #555555;
+        }
+        .left {
 
-        .top {
-            width: 189px;
-            height: 118px;
         }
-        .mid-tall {
-            width: 139px;
-            height: 100px;
-            vertical-align: top;
-        }
-        .mid-short {
-            width: 139px;
-            height: 75px;
-            vertical-align: top;
-        }
-        .bm-left {
-            width: 289px;
-            height: 35px;
-        }
-        .bm-right {
-            width: 289px;
-            height: 118px;
-        }
+        .right {
 
+        }
+        .circle {
+            border: 10px dashed #555555;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
     </style>
   </head>
 
   <body>
-    
-    <h1>AAAAAHHHHHH! boxes...</h1>
-
-    <div class="outer">
-        <div class="inner top"></div>
-        <div class="inner top"></div>
-        <div class="inner top"></div>
+    <div class="background">
+        <div class="item square left"></div>
+        <div class="item circle"></div>
+        <div class="item square right"></div>
     </div>
-
-    <div class="outer">
-        <div class="inner mid-tall"></div>
-        <div class="inner mid-short"></div>
-        <div class="inner mid-tall"></div>
-        <div class="inner mid-short"></div>
-    </div>
-
-    <div class="outer">
-        <div class="inner bm-left"></div>
-        <div class="inner bm-right"></div>
-    </div>
-
   </body>
 
 </html>
